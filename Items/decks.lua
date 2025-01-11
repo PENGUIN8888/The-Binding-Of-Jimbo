@@ -44,6 +44,12 @@ local LostDeck = {
     apply = function()
         G.E_MANAGER:add_event(Event({
 			func = function()
+                G.GAME.round_resets.hands = 1
+                G.GAME.round_resets.discards = 1
+                WrenBind.util.deck_joker({
+                    joker = "wrenbind_ed6",
+                    negative = true
+                })
                 WrenBind.util.deck_joker({
                     joker = "wrenbind_holymantle",
                     negative = true
