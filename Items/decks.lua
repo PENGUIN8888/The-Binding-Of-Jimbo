@@ -45,7 +45,7 @@ local LostDeck = {
         G.E_MANAGER:add_event(Event({
 			func = function()
                 WrenBind.util.deck_joker({
-                    joker = "",
+                    joker = "wrenbind_holymantle",
                     negative = true
                 })
 				return true
